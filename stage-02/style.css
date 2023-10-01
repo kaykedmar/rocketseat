@@ -95,3 +95,9 @@ footer {
 footer span { 
   color: #89C5CC;
 }
+
+.bolinhas { 
+  position: fixed;
+  bottom: 0px;
+  right: 0px
+}
