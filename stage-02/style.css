@@ -96,8 +96,10 @@ footer span {
   color: #89C5CC;
 }
 
-.bolinhas { 
+footer .bolinhas { 
   position: fixed;
   bottom: 0px;
-  right: 0px
+  right: 0px;
+  background-color: pink;
+  /* Ajeitar */
 }
