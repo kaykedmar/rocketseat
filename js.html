@@ -1,0 +1,18 @@
+
+<script>
+function SayMyName(nome) { 
+  if(nome === '') { 
+    throw 'Preencha o campo!' 
+    
+  }
+  console.log(`Ola, ${nome}`) 
+}
+
+try {
+  SayMyName('')
+} 
+  catch (error) {
+   console.log(`Error na aplicaçao, ${error}`)
+}
+
+console.log('Apos o erro')</script>
