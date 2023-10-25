@@ -4,23 +4,20 @@ const notes = Number(prompt('Nota do Primeiro Bimestre'))
 const notesTwo = Number(prompt('Nota do Segundo Bimestre'))
 const notesThree = Number(prompt('Nota do Terceiro Bimestre'))
 
-let somaDasNotas = notes + notesTwo + notesThree
+let somaDasNotas = (notes + notesTwo+ notesThree) / 3
 
-const media = Math.round(somaDasNotas / 3);
+// .toFixed Usada para determinada quantas casas decimais vai ter o resultado. 
+somaDasNotas = somaDasNotas.toFixed(1)
 
-console.log(`Ola ${nome}, Sua media foi ${media}`)
 
-
-if (media === 10) {
-  console.log('Você atingiu a nota máxima! Parabéns!!!');
-} else if (media <=6) {
-  console.log('Você foi reprovado :(');
-} else if (media >= 7) {
-  console.log('Você esta na media, Estude mais!!');
-} else if (media <= 7 ) {
-  console.log('Você foi reprovado :(');
+if (somaDasNotas > 6) { 
+  console.log(`Olá ${nome}, Sua nota foi de: ${somaDasNotas}, Parabens!!!`)
 } else { 
-  console.log('Insira uma nota valida')
+  console.log(`${nome}, sua media foi de: ${somaDasNotas}, Estude para recuperação...`)
 }
+
+
+
+
 
   
