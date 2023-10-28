@@ -1,4 +1,4 @@
-let option; 
+let option;
 let items = []
 
 while (option != 4) {
@@ -12,35 +12,41 @@ while (option != 4) {
 `))
 
 
-  if (option == 1) {
-    let item = prompt("Digite o nome do item")
-    items.push(item)
-  }
- 
-  else if (option == 2) {
+  switch (option) {
+    case 1:
+      let item = prompt("Digite o nome do item")
+      items.push(item)
+      break
 
-    if (items.length === 0) {
-      alert('Nenhum item cadastrado!')
+    case 2:
+      if (items.length === 0) {
+        alert('Nenhum item cadastrado!')
+      }
+      else {
+        alert(items)
+      }
+      break
+
+    case 3:
+      if (items.length === 0) {
+        alert('Nenhum item para retirar!')
+      }
+
+      else {
+        items.pop()
+        alert('Item Retirado do carrinho!!')
+      }
+      break
+
+    case 4:
+      alert('Good Bye')
+      break
+    default:
+      alert('Opçao invalida!')
+      break
     }
-    else {
-      alert(items)
-    }
+    console.log(option, items)
   }
 
-  else if (option == 3) { 
-   if (items.length === 0) { 
-    alert('Nenhum item para retirar!')
-   }
-
-   else { 
-    items.pop()
-    alert('Item Retirado do carrinho!!')
-  }
-   } 
-   else if (option == 4) { 
-    alert('Good Bye')
-   }
  
-  console.log(option, items)
-}
 
