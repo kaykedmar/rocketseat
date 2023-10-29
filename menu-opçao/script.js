@@ -11,7 +11,6 @@ while (option != 4) {
   4. Sair do programa
 `))
 
-
   switch (option) {
     case 1:
       let item = prompt("Digite o nome do item")
