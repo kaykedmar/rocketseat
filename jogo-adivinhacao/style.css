@@ -1,66 +1,98 @@
 
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root { 
   font-size: 62.5%;
 }
 
-body { 
-  font-size: 1.6rem;
-  background: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+
+.hide { 
+  display: none;
 }
 
+body { 
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  font-size: 1.6rem;
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover { 
+  background-color: #4c4c9e;
+  color: white;
+}
+
+/* Screen 1  */
 
 main { 
-  padding: 48px 64px 64px 64px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
-  width: min(42.8rem, 90%);
-  height: 200px;
-  top: 200px;
-  left: 425px;
+  background: #FFF;
+  box-shadow: 0 .2rem .4rem  rgba(0, 0, 0, 0.10);
   border-radius: 6px;
-  background-color: rgb(236, 236, 236);
-  user-select: none;
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+  text-align: center;
+
 }
 
-.game { 
+h1 { 
+  margin-bottom: 1.6rem;
+}
+
+form { 
+  margin-top: 4.8rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+input, button { 
+  border: none;
+  padding: 1.6rem;
 
 }
 
-.game p { 
-  text-align: center;
-}
-
-.button { 
-  display: flex;
-  flex-direction: row;
-  height: 50px;
-  margin-top: 30px;
-  cursor: pointer;
+input { 
+  background-color: #dce2e9;
+  border-radius: 4px 0px 0px 4px;
+  width: 5rem;
 
 }
 
-.number { 
-  text-align: center;
-  background-color: #DCE2E9;
-  width: 40px;
-  border-radius: 5px;
-
+input:focus {
+  outline: none; /* Remova a borda de foco*/
 }
 
-.tent { 
-  text-align: center;
-  width: 70px;
+button { 
   background-color: #7879F1;
-  color: white;
-  font-weight: 700;
-  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #dbdbdb;
+  border-radius: 0px 4px 4px 0px;
+  transition: background-color, 0.2s;
 
 }
+
+/* Screen 1 end */
+
+
+/* Screen 2 */
+
+h2  { 
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button { 
+  border-radius: .4rem;
+}
+

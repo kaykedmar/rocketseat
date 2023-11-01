@@ -4,22 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Jogo Adivinhaçao</title>
+  <title>Adivinhe o numero</title>
 </head>
 <body>
   <main>
-    <div class="game">
-    <div class="start">
-    <h1>Jogo da Adivinhação</h1>
-    <p>Adivinhe o número entre 0 e 10</p>
-  </div>
-  <div class="button">
-    <div class="number"><p>6</p></div>
-    <div class="tent"><p>Tentar</p></div>
-  </div>
-</div>
-  </main>
+    
+    <div class="screen1 hide" >
+    <h1>Jogo da Adivinhaçao:</h1>
+    <p>Adivinhe um numero de 0 a 10</p>
 
-  <script src="script.js"> </script>
+    <form>
+      <input type="text">
+      <button>Tentar</button>
+    </form>
+  </div>
+
+
+  <div class="screen2">
+    <h2>Acertou em 3 vezes</h2>
+    <button>Jogar novamente</button>
+  </div>
+
+  </main>
 </body>
 </html>
