@@ -11,18 +11,18 @@
     
     <div class="screen1 " >
     <h1>Jogo da Adivinhaçao:</h1>
-    <p>Adivinhe um numero de 0 a 10</p>
+    <p>Adivinhe um numero de 0 a 5</p>
 
     <form>
       <input id="inputNumber" type="text ">
-      <button onclick="hadleClick(event)">Tentar</button>
+      <button id="btnTry">Tentar</button>
     </form>
   </div>
 
 
   <div class="screen2 hide">
-    <h2>Acertou em 3 vezes</h2>
-    <button>Jogar novamente</button>
+    <h2 id="acertos-js">Acertou em 3 vezes</h2>
+    <button id="btnAgain">Jogar novamente</button>
   </div>
 
 
