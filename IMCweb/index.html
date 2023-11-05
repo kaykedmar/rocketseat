@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,39 @@
 
   <script src="script.js" defer></script>
 </head>
+
 <body>
 
   <div class="container">
-  <main class="card">
+    <main class="card">
+      <form>
 
-    <div class="input-entrada">
-    <form action="">
+        <h1 class="title"> Calculo de IMC</h1>
+        <div class="input-wrapper">
+          <label for="weight">
+            Peso(kg)
+          </label>
+          <input id="weight" type="number" placeholder="80">
+        </div>
 
-      <h1 class="title"> Calculo de IMC</h1>
+        <div class="input-wrapper">
+          <label for="height">
+            Altura(m)
+          </label>
 
-      <label for="weight">
-        Peso(kg)
-      </label>
+          <input id="height" 
+          type="number" 
+          placeholder="165">
+        </div>
 
-      <input id="weight" type="number">
-   
-  </div>
+          <button type="submit">
+            Calcular IMC <img src="assets/seta.svg" alt="">
 
-  <div class="input-entrada">
-
-      <label for="height">
-        Altura(m)
-      </label>
-
-      <input id="height" type="number"> 
-
-    <button type="submit">
-      Calcular IMC <img src="assets/seta.svg" alt="">
-    </button>
-
-  </form>
-  </main>
+          </button>
+      </form>
+    </main>
 </div>
 
-
 </body>
+
 </html>

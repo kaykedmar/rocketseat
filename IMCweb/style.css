@@ -10,8 +10,7 @@
 
 body { 
   background-color: rgb(34, 34, 34);
-  font-size: 1.6rem;
- 
+
 }
 
 
@@ -23,7 +22,7 @@ body {
 
 
 .card { 
-  padding: 4.8rem 6.4rem 6.rem;
+  padding: 4.8rem 6.4rem 6.0rem;
   background-color: white;
   max-width: 42.8rem;
   margin-inline: auto;
@@ -31,3 +30,35 @@ body {
   box-shadow: 0.2rem .4rem rgba(0,0,0,0.1);
   border-radius: .6rem;
 }
+
+
+.title { 
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+form h1 { 
+  margin-bottom: 3.2rem;
+}
+
+form label { 
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: .8rem;
+  display: block;
+  /* display-inline nao aceite margin */
+}
+
+form input { 
+  width: 100%;
+  border-radius: .4rem;
+  padding: 1.6rem;
+}
+
+
+/* um elemento anterior ao outro */
+.input-wrapper + .input-wrapper { 
+  margin-top: 1.6rem;
+}
+
+
