@@ -2,13 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
+  background: #040924;
+  width: 100vw;
+  height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -18,11 +24,11 @@ main {
   justify-content: center;
   gap: 32px;
   width: 23rem;
-  height: 21rem;
+  height: 25rem;
   border-radius: 6px;
   background: #FFF;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.10);
-  /* margin: 0 auto; Adicione esta linha para centralizar o <main> */
+  margin: 0 auto; 
   margin: 30px;
   user-select: none;
 }
@@ -80,8 +86,9 @@ label {
 
 .screen2 { 
   background: #FFF;
-  padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.10);
   border-radius: 6px;
-
+  width: 90%;
+  padding: 20px 20px 0px 20px;
+  
 }
