@@ -16,4 +16,4 @@ screen2.querySelector('h1').innerHTML = `Seu IMC e de ${imc}`
 
 }
 
-btnCalcular.addEventListener('keydown', calcularIMC)
+btnCalcular.addEventListener('click', calcularIMC)
