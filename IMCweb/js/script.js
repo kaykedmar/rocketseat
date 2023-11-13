@@ -1,5 +1,7 @@
 import { AlertError } from './alert.error.js'
 import { modal } from './modal.js'
+import { IMC, notANumber } from './utils.js'
+
 
 const form = document.querySelector('form')
 const inputHeight = document.querySelector('#height')
@@ -32,11 +34,5 @@ form.onsubmit = (event) => {
   console.log(result)
 }
 
-function IMC(weight, height) { 
-  return (weight/ ((height / 100 ) ** 2)).toFixed(2)
-}
-
-
-function notANumber(value) { 
-  return isNaN(value) || value == ''
-}
+inputHeight.oninput = () => AlertError.close() 
+inputWeight.oninput = () => AlertError.close()
