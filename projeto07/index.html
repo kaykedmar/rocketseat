@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <title>SPA</title>
+  </head>
+  <body>
+    <h1>Clique em algo</h1>
+    <!-- Navegação com links que chamam a função 'route' ao serem clicados -->
+    <nav>
+      <a href="/projeto07/pages/home.html" onclick="route(event)">Home</a>
+      <a href="/projeto07/pages/contant.html" onclick="route(event)">Contant</a>
+      <a href="/projeto07/pages/about.html" onclick="route(event)">Sobre</a>
+      <a href="/projeto07/pages/error.html" onclick="route(event)">404</a>
+    </nav>
+
+    <!-- Div vazia que pode ser usada para renderizar conteúdo dinâmico -->
+    <div id="app"></div>
+
+    <script>
+      // Mapeamento de rotas para URLs correspondentes
+      const routes = {
+        "/": "/projeto07/pages/home.html",
+        "/contact": "/projeto07/pages/contant.html",
+        "/about": "/projeto07/pages/about.html",
+        404: "/projeto07/pages/error.html",
+      };
+
+      // Função chamada ao clicar em um link, manipula a navegação e chama 'handle'
+      function route(event) {
+        // Se o objeto 'event' não estiver definido, use 'window.event'
+        event = event || window.event;
+        event.preventDefault();
+
+        // Atualiza o histórico de navegação para a nova URL sem recarregar a página
+        window.history.pushState({}, "", event.target.href);
+
+        // Previne o comportamento padrão de navegação
+  
+        // Chama a função 'handle' para lidar com a nova URL
+        handle();
+
+        console.log("Navigating to new page");
+      }
+
+      // Função para lidar com a URL atual e executar ações correspondentes
+      function handle() {
+        // Obtém o caminho da URL atual
+        const { pathname } = window.location;
+        const route = routes[pathname] || routes[404]
+
+
+        fetch(route).then(data => data.text()).then(html => 
+        document.querySelector('#app').innerHTML = html)
+      }
+      handle()
+    </script>
+  </body>
+</html>
